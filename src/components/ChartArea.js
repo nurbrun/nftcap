@@ -19,12 +19,12 @@ const ChartArea = () => {
   const [templateID, setTemplateID] = useState('');
   const [collectionName, setCollectionName] = useState('');
   const [templateName, setTemplateName] = useState('');
-  const [templateImage, setTemplateImage] = useState('');
+  // const [templateImage, setTemplateImage] = useState('');
   const [issuedSupply, setIssuedSupply] = useState('');
   const [lastSalePrice, setLastSalePrice] = useState('');
   const [marketCap, setMarketCap] = useState('');
   // const imgURLBase = "https://ipfs.atomichub.io/ipfs/";
-  const imgURLBase = "https://resizer.atomichub.io/images/v1/preview?ipfs=";
+  // const imgURLBase = "https://resizer.atomichub.io/images/v1/preview?ipfs=";
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -146,7 +146,7 @@ const ChartArea = () => {
         .then((response) => {
           setCollectionName(response.data.data[0].collection.name)
           setTemplateName(response.data.data[0].template.immutable_data.name)
-          setTemplateImage(imgURLBase+response.data.data[0].template.immutable_data.img+"&size=370")          
+          // setTemplateImage(imgURLBase+response.data.data[0].template.immutable_data.img+"&size=370")          
           // setTemplateImage(imgURLBase+response.data.data[0].template.immutable_data.img)
           setIssuedSupply(response.data.data[0].template.issued_supply)
         })
@@ -189,9 +189,9 @@ const ChartArea = () => {
           <code>{collectionName}</code>          
           <h3>{templateName}</h3>
         </Grid>
-        <Grid item xs={12} sm={12} md={1} className="grid-item">
+{/*        <Grid item xs={12} sm={12} md={1} className="grid-item">
           <img src={templateImage} alt={templateName} width="100px"/>
-        </Grid>
+        </Grid>*/}
         <Grid item xs={12} sm={4} md={2} className="grid-item">
           <code>Supply</code>
           <h3>{formatFloat(issuedSupply, 0)}</h3>
