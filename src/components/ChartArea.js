@@ -23,8 +23,8 @@ const ChartArea = () => {
   const [issuedSupply, setIssuedSupply] = useState('');
   const [lastSalePrice, setLastSalePrice] = useState('');
   const [marketCap, setMarketCap] = useState('');
-  const imgURLBase = "https://ipfs.atomichub.io/ipfs/";
-  // const imgURLBase = "https://resizer.atomichub.io/images/v1/preview?ipfs=";
+  // const imgURLBase = "https://ipfs.atomichub.io/ipfs/";
+  const imgURLBase = "https://resizer.atomichub.io/images/v1/preview?ipfs=";
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -145,8 +145,8 @@ const ChartArea = () => {
       axios.get(apiTemplateURL)
         .then((response) => {
           setCollectionName(response.data.data[0].collection.name)
-          setTemplateName(response.data.data[0].template.immutable_data.name)
-          // setTemplateImage(imgURLBase+response.data.data[0].template.immutable_data.img+"&size=370")          
+          // setTemplateName(response.data.data[0].template.immutable_data.name)
+          setTemplateImage(imgURLBase+response.data.data[0].template.immutable_data.img+"&size=370")          
           setTemplateImage(imgURLBase+response.data.data[0].template.immutable_data.img)
           setIssuedSupply(response.data.data[0].template.issued_supply)
         })
