@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nftcap/static/css/main.915d6236.chunk.css",
-    "main.js": "/nftcap/static/js/main.dd96471f.chunk.js",
-    "main.js.map": "/nftcap/static/js/main.dd96471f.chunk.js.map",
+    "main.js": "/nftcap/static/js/main.fc57117c.chunk.js",
+    "main.js.map": "/nftcap/static/js/main.fc57117c.chunk.js.map",
     "runtime-main.js": "/nftcap/static/js/runtime-main.51d7f1c1.js",
     "runtime-main.js.map": "/nftcap/static/js/runtime-main.51d7f1c1.js.map",
     "static/js/2.176ac919.chunk.js": "/nftcap/static/js/2.176ac919.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.51d7f1c1.js",
     "static/js/2.176ac919.chunk.js",
     "static/css/main.915d6236.chunk.css",
-    "static/js/main.dd96471f.chunk.js"
+    "static/js/main.fc57117c.chunk.js"
   ]
 }
