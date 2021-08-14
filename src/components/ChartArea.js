@@ -145,9 +145,9 @@ const ChartArea = () => {
       axios.get(apiTemplateURL)
         .then((response) => {
           setCollectionName(response.data.data[0].collection.name)
-          // setTemplateName(response.data.data[0].template.immutable_data.name)
+          setTemplateName(response.data.data[0].template.immutable_data.name)
           setTemplateImage(imgURLBase+response.data.data[0].template.immutable_data.img+"&size=370")          
-          setTemplateImage(imgURLBase+response.data.data[0].template.immutable_data.img)
+          // setTemplateImage(imgURLBase+response.data.data[0].template.immutable_data.img)
           setIssuedSupply(response.data.data[0].template.issued_supply)
         })
         .catch(function (error){
