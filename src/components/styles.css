@@ -1,0 +1,30 @@
+html,
+body,
+#root,
+.App {
+  margin: 0;
+  height: 100%;
+}
+*:focus {
+    outline: none;
+}
+h3{
+  margin-top:2.5px;
+  margin-bottom:5px;
+}
+p{
+  margin-top: 10px;
+  margin-bottom:2.5px;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.chart-container {
+  flex: 1;
+  height: 1%;
+}
+.grid-item{
+  padding: 5px;
+}
