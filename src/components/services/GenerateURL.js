@@ -16,3 +16,9 @@ export function templateDataURL(templateInput) {
   const URLSchematic = "https://wax.api.atomicassets.io/atomicassets/v1/assets?template_id={{templateID}}&page=1&limit=1&order=desc&sort=asset_id";
   return URLSchematic.replace('{{templateID}}',templateInput)
 }
+
+export function burnDataURL(templateInput, collectionName) {
+  const URLSchematic = "https://wax.api.atomicassets.io/atomicassets/v1/templates/{{collectionName}}/{{templateID}}/stats";
+  // debugger;
+  return URLSchematic.replace('{{templateID}}',templateInput).replace('{{collectionName}}',collectionName)
+}

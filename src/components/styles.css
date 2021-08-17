@@ -8,7 +8,7 @@ body,
 *:focus {
     outline: none;
 }
-h3{
+h3,h5{
   margin-top:2.5px;
   margin-bottom:5px;
 }
@@ -27,4 +27,7 @@ p{
 }
 .grid-item{
   padding: 5px;
+}
+.burn-icon{
+  vertical-align: sub;
 }
